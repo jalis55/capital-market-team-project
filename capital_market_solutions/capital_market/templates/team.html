@@ -1,100 +1,112 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Members</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
-    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" href="css/magnific-popup.css"> 
-    <link rel="stylesheet" href="css/templatemo-ocean-vibes.css"> 
-	
-	<style>
-		
-@media screen and (max-width: 580px) {
-  body {
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capital Market Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <!-- https://fonts.google.com/ -->
+  <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}"> <!-- https://fontawesome.com/ -->
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'css/templatemo-ocean-vibes.css' %}">
 
-.wrapper {
-  margin: 0 auto;
-  padding: 40px;
-  max-width: 800px;
-}
+  <style>
+    @media screen and (max-width: 580px) {
+      body {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
 
-.table {
-  margin: 0 0 40px 0;
-  width: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  display: table;
-}
-@media screen and (max-width: 580px) {
-  .table {
-    display: block;
-  }
-}
+    .wrapper {
+      margin: 0 auto;
+      padding: 40px;
+      max-width: 800px;
+    }
 
-.row {
-  display: table-row;
-  background: #f6f6f6;
-}
-.row:nth-of-type(odd) {
-  background: #e9e9e9;
-}
-.row.header {
-  font-weight: 900;
-  color: #ffffff;
-  background: #ea6153;
-}
-.row.green {
-  background: #27ae60;
-}
-.row.blue {
-  background: #2980b9;
-}
-@media screen and (max-width: 580px) {
-  .row {
-    padding: 14px 0 7px;
-    display: block;
-  }
-  .row.header {
-    padding: 0;
-    height: 6px;
-  }
-  .row.header .cell {
-    display: none;
-  }
-  .row .cell {
-    margin-bottom: 10px;
-  }
-  .row .cell:before {
-    margin-bottom: 3px;
-    content: attr(data-title);
-    min-width: 98px;
-    font-size: 10px;
-    line-height: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #969696;
-    display: block;
-  }
-}
+    .table {
+      margin: 0 0 40px 0;
+      width: 100%;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      display: table;
+    }
 
-.cell {
-  padding: 6px 12px;
-  display: table-cell;
-}
-@media screen and (max-width: 580px) {
-  .cell {
-    padding: 2px 16px;
-    display: block;
-  }
-}
-	
-	</style>
-<!--
+    @media screen and (max-width: 580px) {
+      .table {
+        display: block;
+      }
+    }
+
+    .row {
+      display: table-row;
+      background: #f6f6f6;
+    }
+
+    .row:nth-of-type(odd) {
+      background: #e9e9e9;
+    }
+
+    .row.header {
+      font-weight: 900;
+      color: #ffffff;
+      background: #ea6153;
+    }
+
+    .row.green {
+      background: #27ae60;
+    }
+
+    .row.blue {
+      background: #2980b9;
+    }
+
+    @media screen and (max-width: 580px) {
+      .row {
+        padding: 14px 0 7px;
+        display: block;
+      }
+
+      .row.header {
+        padding: 0;
+        height: 6px;
+      }
+
+      .row.header .cell {
+        display: none;
+      }
+
+      .row .cell {
+        margin-bottom: 10px;
+      }
+
+      .row .cell:before {
+        margin-bottom: 3px;
+        content: attr(data-title);
+        min-width: 98px;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #969696;
+        display: block;
+      }
+    }
+
+    .cell {
+      padding: 6px 12px;
+      display: table-cell;
+    }
+
+    @media screen and (max-width: 580px) {
+      .cell {
+        padding: 2px 16px;
+        display: block;
+      }
+    }
+  </style>
+  <!--
     
 TemplateMo 554 Ocean Vibes
 
@@ -102,67 +114,70 @@ https://templatemo.com/tm-554-ocean-vibes
 
 -->
 </head>
+
 <body>
-    <header class="tm-site-header">
-        <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">Capital</span> <span class="tm-color-gray-2">Market</span></h1>
-        <em class="tm-tagline tm-color-light-gray">Solutions</em>
-    </header>
+  <header class="tm-site-header">
+    <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">Capital</span> <span
+        class="tm-color-gray-2">Market</span></h1>
+    <em class="tm-tagline tm-color-light-gray">Solutions</em>
+  </header>
 
-    <!-- Video banner 400 px height -->
-    
-    <div class="wrapper" style="max-width: 1440px; width:100%, margin: 0 auto;">
-  
-  <div class="table">
-    
-    <div class="row header">
-      <div class="cell">
-        Name
+  <!-- Video banner 400 px height -->
+
+  <div class="wrapper" style="max-width: 1440px; width:100%, margin: 0 auto;">
+
+    <div class="table">
+
+      <div class="row header">
+        <div class="cell">
+          Name
+        </div>
+        <div class="cell">
+          Position
+        </div>
+        <div class="cell">
+          Phone
+        </div>
+        <div class="cell">
+          Whatsapp
+        </div>
+        <div class="cell">
+          Team
+        </div>
       </div>
-      <div class="cell">
-        Position
-      </div>
-      <div class="cell">
-        Phone
-      </div>
-      <div class="cell">
-        Whatsapp
-      </div>
-      <div class="cell">
-        Team
-      </div>
-    </div>
-    {% for tm in teammembers %}
-    <div class="row">
-      <div class="cell" data-title="Name">
-        {{tm.name}}
-        {% if tm.is_teamleader %}
-        <br>
+      {% for tm in teammembers %}
+      <div class="row">
+        <div class="cell" data-title="Name">
+          {{tm.name}}
+          {% if tm.is_teamleader %}
+          <br>
           <b>Team Leader </b>
-        {% endif %}
+          {% endif %}
 
+        </div>
+        <div class="cell" data-title="Age">
+          {{tm.position}}
+        </div>
+        <div class="cell" data-title="Occupation">
+          {{tm.phone}}
+        </div>
+        <div class="cell" data-title="Location">
+          {{tm.whatsapp}}
+        </div>
+        <div class="cell" data-title="Location">
+          {{tm.team.name}}
+        </div>
       </div>
-      <div class="cell" data-title="Age">
-        {{tm.position}}
-      </div>
-      <div class="cell" data-title="Occupation">
-        {{tm.phone}}
-      </div>
-      <div class="cell" data-title="Location">
-        {{tm.whatsapp}}
-      </div>
-      <div class="cell" data-title="Location">
-        {{tm.team.name}}
-      </div>
+      {% endfor %}
+
+
+
     </div>
-    {% endfor %}
-    
 
-    
+
   </div>
-  
- 
-</div>
 
-  
+
 </body>
+
 </html>

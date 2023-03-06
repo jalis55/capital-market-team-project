@@ -2,15 +2,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Market Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/ -->
     <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}"> <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}"> 
-    <link rel="stylesheet" href="{% static 'css/templatemo-ocean-vibes.css' %}"> 
-<!--
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-ocean-vibes.css' %}">
+    <!--
     
 TemplateMo 554 Ocean Vibes
 
@@ -18,9 +20,11 @@ https://templatemo.com/tm-554-ocean-vibes
 
 -->
 </head>
+
 <body>
     <header class="tm-site-header">
-        <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">Capital</span> <span class="tm-color-gray-2">Market</span></h1>
+        <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">Capital</span> <span
+                class="tm-color-gray-2">Market</span></h1>
         <em class="tm-tagline tm-color-light-gray">Solutions</em>
     </header>
 
@@ -28,31 +32,31 @@ https://templatemo.com/tm-554-ocean-vibes
     <div id="tm-video-container">
         <video autoplay muted loop id="tm-video">
             <source src="{% static 'video/ocean-sea-wave-video.mp4' %}" type="video/mp4">
-        </video>  
+        </video>
         <i id="tm-video-control-button" class="fas fa-pause"></i>
     </div>
     <div class="tm-container">
         <nav class="tm-main-nav">
             <ul id="inline-popups">
                 <li class="tm-nav-item">
-                    <a href="bluechip.html"  class="tm-nav-link">
+                    <a href="{% url 'bc_clients' %}" class="tm-nav-link">
                         Bluechip Clients
                         <i class="fas fa-3x fa-water"></i>
-                    </a>                
+                    </a>
                 </li>
                 <li class="tm-nav-item">
-                    <a href="capita.html" class="tm-nav-link">
+                    <a href="{% url 'capita_clients' %}" class="tm-nav-link">
                         Capita Clients
                         <i class="far fa-3x fa-images"></i>
                     </a>
                 </li>
                 <li class="tm-nav-item">
-                    <a href="{% url 'teammembers' %}"  class="tm-nav-link">
+                    <a href="{% url 'teammembers' %}" class="tm-nav-link">
                         Team Members
                         <i class="far fa-3x fa-smile"></i>
                     </a>
                 </li>
-               <!-- <li class="tm-nav-item">
+                <!-- <li class="tm-nav-item">
                     <a href="#about" data-effect="mfp-move-from-top" class="tm-nav-link">
                         About
                         <i class="fas fa-3x fa-tint"></i>
@@ -68,9 +72,10 @@ https://templatemo.com/tm-554-ocean-vibes
         </nav>
 
         <!-- Popup itself -->
-           </div>
+    </div>
 
-    
-  
+
+
 </body>
+
 </html>
