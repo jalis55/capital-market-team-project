@@ -18,7 +18,8 @@ def teammembers(request):
 
 
 def bc_clients(request):
-    bluechip_clients = Clients.objects.filter(application__name='Bluechip')
+    bluechip_clients = Clients.objects.filter(
+        application__name__icontains='Bluechip')
     context = {
         "bluechip_clients": bluechip_clients
     }
