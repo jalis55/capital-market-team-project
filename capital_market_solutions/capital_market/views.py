@@ -10,7 +10,7 @@ def home(request):
 
 
 def teammembers(request):
-    teammembers = TeamMembers.objects.all()
+    teammembers = TeamMembers.objects.all().order_by('-is_teamleader')
     context = {
         "teammembers": teammembers
     }
