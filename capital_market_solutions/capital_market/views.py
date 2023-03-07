@@ -27,4 +27,4 @@ def bc_clients(request):
 
 
 def capita_clients(request):
-    pass
+    return render(request,'capita.html')
