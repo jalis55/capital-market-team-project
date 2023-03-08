@@ -19,7 +19,7 @@ def teammembers(request):
 
 def bc_clients(request):
     bluechip_clients = Clients.objects.filter(
-        application__name__icontains='Bluechip')
+        application__name__icontains='Bluechip').order_by('primary_cont_person')
     context = {
         "bluechip_clients": bluechip_clients
     }
